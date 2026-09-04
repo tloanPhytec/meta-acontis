@@ -172,6 +172,8 @@ contis technologies GmbH @ 2026
 0000002144: Cfg Station Address.: 0x0001 (   1)
 0000002144: Cfg Device Name.....: Slave_001
 0000002144: ******************************************************************************
+0000002150: Master state changed from <UNKNOWN> to <INIT>
+0000002170: Master state changed from <INIT> to <PREOP>
+0000002170: No ENI file provided. EC-Master started with generated ENI file.
+0000002170: EcMasterDemo will stop in 600s...
 ```
-
-
