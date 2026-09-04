@@ -2,6 +2,8 @@ SUMMARY = "acontis atemsys user mode driver"
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=f3033d8ddc2e0552a85bb08fe1cf24d9"
 
+FILESEXTRAPATHS:prepend := "${THISDIR}/../atemsys/files:"
+
 inherit module
 
 SRC_URI = "file://Makefile \
