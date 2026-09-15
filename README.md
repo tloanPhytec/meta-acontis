@@ -38,9 +38,38 @@ Rebuild your target's image with bitbake:
 MACHINE=phyboard-izar-am68x-2 DISTRO=ampliphy bitbake phytec-headless-image
 ```
 
+Flash the resulting image to an SD Card and then expand the root filesystem:
+
+```sh
+# identify your SD Card
+mount
+
+umount /dev/sdX*
+sudo bmaptool copy phytec-headless-image-phyboard-izar-am68x-2.wic.xz /dev/sdX
+```
+
+Once the SD Card is flashed, expand the SD Card's root filesystem:
+
+```sh
+sudo parted /dev/sdX resizepart 2 100%
+sudo e2fsck -f /dev/sdX2
+sudo resize2fs /dev/sdX2
+```
+
+Mount the root filesystem. The easiest way to do this is to just click the root partition of the connected SD Card in your system tray:
+
+<img width="699" height="470" alt="systemtray" src="https://github.com/user-attachments/assets/4c7bb3d5-cddc-4395-b135-be4482972397" />
+
+Copy the unpacked EC-Master-V3.3-Linux-ARM_64Bit-Eval tarball to your root filesystem:
+
+```sh
+sudo mkdir /media/user/root/root/EC-Master-V3.3-Linux-ARM_64Bit-Eval
+sudo tar -xf EC-Master-V3.3-Linux-ARM_64Bit-Eval.tar.gz -C /media/user/root/root/EC-Master-V3.3-Linux-ARM_64Bit-Eval && sync
+```
+
 ## Runtime Instructions
 
-On your first boot, note that nothing has changed by default. You should have two network interfaces like this (eth0 and eth1):
+On your first boot using the SD Card we just prepared, note that nothing has changed by default. You should have two network interfaces like this (eth0 and eth1):
 
 ```sh
 root@phyboard-izar-am68x-2:~# ip addr
