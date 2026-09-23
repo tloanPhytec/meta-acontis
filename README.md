@@ -22,7 +22,7 @@ cd $BUILDDIR/../sources
 Clone this repo recursively so that the submodules are cloned as well:
 
 ```sh
-git clone --recursive https://github.com/tloanPhytec/meta-acontis.git
+git clone --recursive https://github.com/tloanPhytec/meta-acontis.git -b kirkstone-am68a
 ```
 
 Enable the layer in your build:
@@ -95,7 +95,15 @@ root@phyboard-izar-am68x-2:~# ip addr
 
 By default, eth0 corresponds to the X25 RJ45 connector (labeled Ethernet MCU in the schematic) and eth1 corresponds to the X24 RJ45 connector (labeled Ethernet Main in the schematic).
 
-We can actually run the EC-Master-V3.3-Linux-ARM_64Bit-Eval demo on the raw network socket (as-is, without the optomized driver) like this (using X24 here to connect to a Beckhoff EK1100 device):
+We can actually run the EC-Master-V3.3-Linux-ARM_64Bit-Eval demo on the raw network socket (as-is, without the optomized driver) like this (using X24 here to connect to a Beckhoff EK1100 device).
+
+First, navigate to the unpacked EC-Master Eval package:
+
+```sh
+cd ~/EC-Master-V3.3-Linux-ARM_64Bit-Eval/Bin/Linux/aarch64
+```
+
+Then run the following:
 
 ```sh
 root@phyboard-izar-am68x-2:aarch64# LD_LIBRARY_PATH=. ./EcMasterDemo -sockraw eth1 -v 3 -b 4000
