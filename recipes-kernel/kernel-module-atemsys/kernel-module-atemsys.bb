@@ -17,3 +17,5 @@ export KERNELDIR="${KERNEL_SRC}"
 
 # inherit of module.bbclass will automatically name module packages with
 # "kernel-module-" prefix as required by the oe-core build environment.
+
+KERNEL_MODULE_PROVIDE_VIRTUAL = "0"
