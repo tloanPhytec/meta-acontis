@@ -1,3 +1,10 @@
+[![Brand](https://img.shields.io/badge/PHYTEC-teal)](https://www.phytec.com)
+[![Brand](https://img.shields.io/badge/Acontis-orange)](https://www.acontis.com/en/)
+[![Platform](https://img.shields.io/badge/Platform-phyCORE--i.MX8MPlus-teal)](https://www.phytec.com/product/phycore-imx8m-plus/)
+[![Documentation](https://img.shields.io/badge/Linux-BSP--Yocto--Ampliphy--AM68x--PD24.1.0-purple)](https://www.phytec.de/produkte/system-on-modules/phycore-imx-8m-plus-plugged/#section-5)
+[![Stack](https://img.shields.io/badge/Stack-Acontis_EC--Master-red)](https://www.acontis.com/en/ethercat-master.html)
+[![Context](https://img.shields.io/badge/Context-EtherCAT_Technology-red)](https://www.ethercat.org/default.htm)
+
 This Yocto Meta Layer serves to configure the phyCORE-i.MX8MPlus Development Kit's FEC Ethernet interface with an optimized atemsys kernel module that grants direct access to hardware and improves the performance of the EtherCAT Master Stack Software, EC-Master from Acontis. 
 
 This Meta Layer was tested in combination with the following software components:
