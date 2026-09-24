@@ -175,7 +175,7 @@ ls /dev/atemsys
 * eth0 is now X9 (was X8 before enabling the atemsys device tree overlay).
 * X8 is now a dedicated EtherCAT Master interface.
 
-Using EC-Master-V3.3-Linux-ARM_64Bit-Eval, we can exercise the new EtherCAT Master interface like so (here we connect a Beckhoff EK1100 device to the hyCORE-i.MX8MPlus Development Kit's X8 port):
+Using EC-Master-V3.3-Linux-ARM_64Bit-Eval, we can exercise the new EtherCAT Master interface like so (here we connect a Beckhoff EK1100 device to the phyCORE-i.MX8MPlus Development Kit's X8 port):
 
 ```sh
 root@phyboard-pollux-imx8mp-3:~# LD_LIBRARY_PATH=. ./EcMasterDemo -fslfec 1 1 custom imx8mp rgmii 0 -v 3 -b 1000
