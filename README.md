@@ -1,8 +1,8 @@
 [![Brand](https://img.shields.io/badge/PHYTEC-teal)](https://www.phytec.com)
 [![Brand](https://img.shields.io/badge/Acontis-orange)](https://www.acontis.com/en/)
 [![Platform](https://img.shields.io/badge/Platform-phyCORE--AM68Ax-teal)](https://www.phytec.com/product/phycore-am68a/)
-[![Documentation](https://img.shields.io/badge/Linux-BSP--Yocto--Ampliphy--AM68x--PD24.1.0-purple)](https://www.phytec.de/produkte/system-on-modules/phycore-am68x-tda4x/#downloads)
-[![Stack](https://img.shields.io/badge/Stack-Acontis_EC--Master-red)](https://www.acontis.com/en/ethercat-master.html)
+[![Documentation](https://img.shields.io/badge/Linux-BSP--Yocto--Ampliphy--AM68x--PD24.1.0-teal)](https://www.phytec.de/produkte/system-on-modules/phycore-am68x-tda4x/#downloads)
+[![Stack](https://img.shields.io/badge/Stack-Acontis_EC--Master-orange)](https://www.acontis.com/en/ethercat-master.html)
 [![Context](https://img.shields.io/badge/Context-EtherCAT_Technology-red)](https://www.ethercat.org/default.htm)
 
 This Yocto Meta Layer serves to configure the phyCORE-AM68Ax Development Kit's MCU_Ethernet interface with an optimized atemsys kernel module that grants direct access to hardware and improves the performance of the EtherCAT Master Stack Software, EC-Master from Acontis. 
